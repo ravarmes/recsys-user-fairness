@@ -52,6 +52,12 @@ O objetivo deste repositório é implementar os cálculos de medidas de justiça
 * TestUserFairnessMany: arquivo para testar a implementação UserFairness (considerando os seguintes valores do parâmetro ℓ = {10, 50, 100, 500})
 ```
 
+## :link: Links <a name="-links"/></a>
+
+- [Google Colaboratory](https://colab.research.google.com/drive/14YChFGvuq5KDSo5QvOmRLCk46VHIP7cm) - Notebook para demonstrar a utilização do algoritmo para uma base de dados pequena (8 usuário e 10 filmes);
+- [Google Sheets](https://docs.google.com/spreadsheets/d/1nwF8vc2DYaUydz-ngczs5SckHKS0FavsPS0JU9Ic2kU/) - Planilha para demonstrar a utilização do algoritmo para uma base de dados pequena (8 usuário e 10 filmes) ;
+- [Artigo](https://arxiv.org/pdf/1807.06349.pdf) - User Fairness in Recommender Systems;
+
 
 ## :memo: Licença <a name="-licenca"/></a>
 
