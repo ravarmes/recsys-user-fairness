@@ -37,7 +37,7 @@ class RecSysAntidoteData():
         pass
     
         
-class als_RecSysAntidoteData(RecSysAntidoteData):
+class als_RecSysALS(RecSysAntidoteData):
     
     def fit_model(self, ratings=None, max_iter=50, threshold=1e-5):
         X = self.ratings if ratings is None else ratings

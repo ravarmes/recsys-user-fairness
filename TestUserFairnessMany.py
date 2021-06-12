@@ -14,7 +14,7 @@ n_movies= 1700
 top_users = True # True: to use users with more ratings; False: otherwise
 
 # recommendation algorithm
-algorithm = 'RecSysAntidoteData'
+algorithm = 'RecSysALS'
 
 # parameters for calculating fairness measures
 list_l = [10, 100, 200, 500, 1000]
@@ -35,7 +35,7 @@ for l in list_l:
     X, genres, user_info = uf.read_movieitems(n_movies, n_users, top_users, data_dir = Data_path) # returns matrix of ratings with n_users rows and n_moveis columns
     omega = ~X.isnull() # matrix X with True in cells with evaluations and False in cells not rated
 
-    X_est = uf.compute_X_est(X, algorithm) # RecSysAntidoteData or RecSysKNN or RecSysNMF
+    X_est = uf.compute_X_est(X, algorithm) # RecSysALS or RecSysKNN or RecSysNMF
 
     list_R_k_top = uf.compute_R_k_top(X_est, omega, k)
     list_R_k_random = uf.compute_R_k_random(X_est, omega, k)

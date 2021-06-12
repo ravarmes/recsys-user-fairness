@@ -14,7 +14,7 @@ top_users = False # True: to use users with more ratings; False: otherwise
 #top_users = True # True: to use users with more ratings; False: otherwise
 
 # recommendation algorithm
-algorithm = 'RecSysAntidoteData'
+algorithm = 'RecSysALS'
 
 # parameters for calculating fairness measures
 l = 5
@@ -32,7 +32,7 @@ omega = ~X.isnull() # matrix X with True in cells with evaluations and False in 
 #print("Omega")
 #print(omega)
 
-X_est = uf.compute_X_est(X, algorithm) # RecSysAntidoteData or RecSysKNN or RecSysNMF
+X_est = uf.compute_X_est(X, algorithm) # RecSysALS or RecSysKNN or RecSysNMF
 #print("X_est")
 #print(X_est)
 

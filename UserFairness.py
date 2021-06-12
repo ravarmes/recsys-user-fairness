@@ -1,6 +1,6 @@
 import pandas as pd
 import random
-import RecSysAntidoteData
+import RecSysALS
 import RecSysKNN
 import RecSysNMF
 
@@ -57,16 +57,16 @@ class UserFairness():
 
     ###################################################################################################################
     # compute_X_est: 
-    def  compute_X_est(self, X, algorithm='RecSysAntidoteData'):
+    def  compute_X_est(self, X, algorithm='RecSysALS'):
         
-        if(algorithm == 'RecSysAntidoteData'):
+        if(algorithm == 'RecSysALS'):
             
             # factorization parameters
             rank = 1 # before 20
             lambda_ = 1 # before 20 - ridge regularizer parameter
 
             # initiate a recommender system of type ALS (Alternating Least Squares)
-            RS = RecSysAntidoteData.als_RecSysAntidoteData(rank,lambda_)
+            RS = RecSysALS.als_RecSysALS(rank,lambda_)
 
             X_est,error = RS.fit_model(X)
 

@@ -24,7 +24,6 @@
 
 <p align="center">
   <a href="#-sobre">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instalacao">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-links">Links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licenca">Licença</a>
 </p>
@@ -47,7 +46,7 @@ O objetivo deste repositório é implementar os cálculos de medidas de justiça
 
 ```
 * UserFairness: implementação das medidas de justiça do usuário
-* RecSysAntidoteData: implementação do sistema de recomendação baseado em filtragem colaborativa (artigo: 'Fighting Fire with Fire: Using Antidote Data to Improve Polarization and Fairness of Recommender Systems')
+* RecSysALS: implementação do sistema de recomendação baseado em filtragem colaborativa utilizando ALS (mínimos quadrados alternados)
 * TestUserFairnessOne: arquivo para testar a implementação UserFairness (considerando o seguinte valor do parâmetro ℓ = {5})
 * TestUserFairnessMany: arquivo para testar a implementação UserFairness (considerando os seguintes valores do parâmetro ℓ = {10, 50, 100, 500})
 ```
