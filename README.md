@@ -17,8 +17,8 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/ravarmes/scv-backend-spring/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/ravarmes/scv-backend-spring?style=social">
+  <a href="https://github.com/ravarmes/recsys-user-fairness/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/ravarmes/recsys-user-fairness?style=social">
   </a>
 </p>
 
